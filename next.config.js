@@ -57,7 +57,6 @@ module.exports = compose([
           'react-dom': 'preact/compat',
         })
       }
-      console.log(config);
       return config
     },
   }
