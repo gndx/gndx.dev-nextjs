@@ -2,27 +2,34 @@ import Document, { Html, Head, Main, NextScript } from 'next/document'
 class MyDocument extends Document {
   render() {
     return (
-      <Html lang="en">
+      <Html lang="es">
         <Head>
-          <link
-            rel="apple-touch-icon"
-            sizes="180x180"
-            href="/static/favicons/apple-touch-icon.png"
-          />
-          <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="/static/favicons/favicon-32x32.png"
-          />
-          <link
-            rel="icon"
-            type="image/png"
-            sizes="16x16"
-            href="/static/favicons/favicon-16x16.png"
-          />
-          <link rel="manifest" href="/static/favicons/site.webmanifest" />
-          <link rel="mask-icon" href="/static/favicons/safari-pinned-tab.svg" color="#5bbad5" />
+          <link data-react-helmet="true" rel="canonical" href="https://gndx.dev/" />
+          <link data-react-helmet="true" href="favicon.png" rel="icon" type="image/png" />
+          <link data-react-helmet="true" rel="manifest" href="/manifest.json" />
+          <meta data-react-helmet="true" name="google" content="notranslate" />
+          <meta data-react-helmet="true" name="description"
+            content="Foundation Layer at @platzi - Microsoft MVP - Lead at Developer Circles from Facebook - I teach React &amp;amp; Svelte." />
+          <meta data-react-helmet="true" content="#333333" name="theme-color" />
+          <meta data-react-helmet="true" name="description"
+            content="Foundation Layer at @platzi - Microsoft MVP - Lead at Developer Circles from Facebook - I teach React &amp;amp; Svelte." />
+          <meta data-react-helmet="true" name="twitter:card" content="summary_large_image" />
+          <meta data-react-helmet="true" name="twitter:site" content="@gndx" />
+          <meta data-react-helmet="true" name="twitter:creator" content="@gndx" />
+          <meta data-react-helmet="true" name="twitter:title" content="Oscar Barajas Tavares" />
+          <meta data-react-helmet="true" name="twitter:description"
+            content="Foundation Layer at @platzi - Microsoft MVP - Lead at Developer Circles from Facebook - I teach React &amp;amp; Svelte." />
+          <meta data-react-helmet="true" name="twitter:image" content="https://arepa.s3.amazonaws.com/og-gndx.png" />
+          <meta data-react-helmet="true" property="og:title" content="Oscar Barajas Tavares" />
+          <meta data-react-helmet="true" property="og:description"
+            content="Foundation Layer at @platzi - Microsoft MVP - Lead at Developer Circles from Facebook - I teach React &amp;amp; Svelte." />
+          <meta data-react-helmet="true" property="og:image" content="https://arepa.s3.amazonaws.com/og-gndx.png" />
+          <meta data-react-helmet="true" property="og:url" content="https://gndx.dev/" />
+          <meta data-react-helmet="true" property="og:site_name" content="Oscar Barajas Tavares" />
+          <meta data-react-helmet="true" property="og:locale" content="es_ES" />
+          <meta data-react-helmet="true" property="og:type" content="article" />
+          <meta data-react-helmet="true" property="fb:app_id" content="285513459106600" />
+
           <meta name="msapplication-TileColor" content="#2b5797" />
           <meta name="theme-color" content="#ffffff" />
           <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
@@ -30,12 +37,6 @@ class MyDocument extends Document {
           <link
             href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
             rel="stylesheet"
-          />
-          <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css"
-            integrity="sha384-Um5gpz1odJg5Z4HAmzPtgZKdTBHZdw8S29IecapCSB31ligYPhHQZMIlWLYQGVoc"
-            crossOrigin="anonymous"
           />
         </Head>
         <body className="antialiased text-black bg-white dark:bg-gray-900 dark:text-white">
