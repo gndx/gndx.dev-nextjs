@@ -19,19 +19,19 @@ if (!self.define) {
     }
     let promise = Promise.resolve();
     if (!registry[name]) {
-      
-        promise = new Promise(async resolve => {
-          if ("document" in self) {
-            const script = document.createElement("script");
-            script.src = name;
-            document.head.appendChild(script);
-            script.onload = resolve;
-          } else {
-            importScripts(name);
-            resolve();
-          }
-        });
-      
+
+      promise = new Promise(async resolve => {
+        if ("document" in self) {
+          const script = document.createElement("script");
+          script.src = name;
+          document.head.appendChild(script);
+          script.onload = resolve;
+        } else {
+          importScripts(name);
+          resolve();
+        }
+      });
+
     }
     return promise.then(() => {
       if (!registry[name]) {
@@ -45,11 +45,11 @@ if (!self.define) {
     Promise.all(names.map(singleRequire))
       .then(modules => resolve(modules.length === 1 ? modules[0] : modules));
   };
-  
+
   const registry = {
     require: Promise.resolve(require)
   };
-
+  self.__WB_DISABLE_DEV_LOGS = true;
   self.define = (moduleName, depsNames, factory) => {
     if (registry[moduleName]) {
       // Module is already loading or loaded.
@@ -62,7 +62,7 @@ if (!self.define) {
       };
       return Promise.all(
         depsNames.map(depName => {
-          switch(depName) {
+          switch (depName) {
             case "exports":
               return exports;
             case "module":
@@ -73,7 +73,7 @@ if (!self.define) {
         })
       ).then(deps => {
         const facValue = factory(...deps);
-        if(!exports.default) {
+        if (!exports.default) {
           exports.default = facValue;
         }
         return exports;
@@ -81,7 +81,8 @@ if (!self.define) {
     });
   };
 }
-define("./sw.js",['./workbox-1ffba242'], function (workbox) { 'use strict';
+define("./sw.js", ['./workbox-1ffba242'], function (workbox) {
+  'use strict';
 
   /**
   * Welcome to your Workbox-powered service worker!

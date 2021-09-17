@@ -22,7 +22,7 @@ module.exports = compose([
     pwa: {
       dest: 'public',
       runtimeCaching,
-      disable: process.env.NODE_ENV === 'development',
+      disable: 'production'
     },
     webpack: (config) => {
       config.resolve.modules.push(path.resolve('./'));
