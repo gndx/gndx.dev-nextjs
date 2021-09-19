@@ -1,19 +1,24 @@
-import { useState, useEffect } from 'react'
-import headerNavLinks from '@/data/headerNavLinks'
-import Link from './Link'
-import SectionContainer from './SectionContainer'
-import Footer from './Footer'
-import MobileNav from './MobileNav'
+import { useState, useEffect } from 'react';
+import { logEvent as logGAEvent } from './analytics/GoogleAnalytics';
+import headerNavLinks from '@/data/headerNavLinks';
+import Link from './Link';
+import SectionContainer from './SectionContainer';
+import Footer from './Footer';
+import MobileNav from './MobileNav';
 
 const LayoutWrapper = ({ children }) => {
-  const [show, setShow] = useState(false)
+  const [show, setShow] = useState(false);
+
+  const logClickEvent = () => {
+    logGAEvent('subscribe_youtube');
+  }
 
   useEffect(() => {
     let timer1 = setTimeout(() => setShow(true), 10 * 1000)
     return () => {
       clearTimeout(timer1)
     }
-  }, [])
+  }, []);
 
   return (
     <>
@@ -33,6 +38,7 @@ const LayoutWrapper = ({ children }) => {
                   href="https://www.youtube.com/channel/UCw05fUBPwmpu-ehXFMqfdMw?sub_confirmation=1"
                   target="_blank"
                   rel="referrer noreferrer"
+                  onClick={logClickEvent}
                 >
                   Suscríbete a mi canal de Youtube.
                 </a>
@@ -85,7 +91,7 @@ const LayoutWrapper = ({ children }) => {
         </div>
       </SectionContainer>
     </>
-  )
-}
+  );
+};
 
-export default LayoutWrapper
+export default LayoutWrapper;
