@@ -29,7 +29,7 @@ class MyDocument extends Document {
           <meta data-react-helmet="true" property="og:locale" content="es_ES" />
           <meta data-react-helmet="true" property="og:type" content="article" />
           <meta data-react-helmet="true" property="fb:app_id" content="285513459106600" />
-          <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+          <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
           <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
           <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png" />
           <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png" />
@@ -38,15 +38,18 @@ class MyDocument extends Document {
           <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png" />
           <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png" />
           <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png" />
-          <link rel="icon" type ="image/png" sizes="192x192"  href="/android-icon-192x192.png" />
-          <link rel="icon" type ="image/png" sizes="32x32" href="/favicon-32x32.png" />
-          <link rel="icon" type ="image/png" sizes="96x96" href="/favicon-96x96.png" />
-          <link rel="icon" type ="image/png" sizes="16x16" href="/favicon-16x16.png" />
+          <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png" />
+          <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+          <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+          <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
           <meta name="msapplication-TileColor" content="#2b5797" />
           <meta name="theme-color" content="#ffffff" />
-          <link rel="alternate" type ="application/rss+xml" href="/feed.xml" />
+          <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-          <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+            rel="stylesheet"
+          />
         </Head>
         <body className="antialiased text-black bg-white dark:bg-gray-900 dark:text-white">
           <Main />
