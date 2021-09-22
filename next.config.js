@@ -11,11 +11,13 @@ module.exports = withPWA({
   images: {
     domains: ['arepa.s3.amazonaws.com'],
   },
-  redirects: [
-    { 
-      "source": "/platzi",
-      "destination": "https://platzi.com/l/GH49zIgS/", 
-      "permanent": true
-    }
-  ]
+  async redirects() {
+    return [
+      {
+        source: '/platzi',
+        destination: 'https://platzi.com/l/GH49zIgS/',
+        permanent: true,
+      },
+    ]
+  },
 });
