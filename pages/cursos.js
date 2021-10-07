@@ -24,7 +24,7 @@ export default function Cursos() {
             .
           </p>
           <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-            💻18 Cursos &nbsp;&nbsp;&nbsp; 💖 27,376 Opiniones &nbsp;&nbsp;&nbsp; 😀 13,913
+            💻 21 Cursos &nbsp;&nbsp;&nbsp; 💖 35,298 Opiniones &nbsp;&nbsp;&nbsp; 😀 16,913
             Estudiantes
           </p>
         </div>

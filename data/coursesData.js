@@ -143,6 +143,27 @@ const coursesData = [
     stars: 5,
     reviews: 29,
   },
+  {
+    "title": "Curso de Introducción a Jamstack",
+    "url": "https://platzi.com/cursos/jamstack/?utm_source=platzi_teacher&utm_medium=teacher_referral&utm_campaign=542",
+    "badge": "https://static.platzi.com/media/achievements/introduccion-a-jamstack_badge-6e3bcd21-8276-48f5-b314-835aebd65856.png",
+    "stars": 5,
+    "reviews": 20
+  },
+  {
+    "title": "Platzi CONF 2021",
+    "url": "https://platzi.com/cursos/platziconf2021/?utm_source=platzi_teacher&utm_medium=teacher_referral&utm_campaign=542",
+    "badge": "https://static.platzi.com/media/achievements/artboard-95-2-17a5ae61-f866-4123-91ba-0f986a8421e5.png",
+    "stars": 5,
+    "reviews": 134
+  },
+  {
+    "title": "Curso Práctico de React.js",
+    "url": "https://platzi.com/cursos/react-practico/?utm_source=platzi_teacher&utm_medium=teacher_referral&utm_campaign=542",
+    "badge": "https://static.platzi.com/media/achievements/piezas-reactjs-badge-1-52e950ac-c75c-40f5-94e0-8b6cab392ed2.png",
+    "stars": 5,
+    "reviews": 9
+  }
 ];
 
 export default coursesData;
