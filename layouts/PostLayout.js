@@ -28,13 +28,14 @@ export default function PostLayout({
   prev,
   children,
 }) {
-  const { slug, fileName, date, title, tags } = frontMatter;
+  const { slug, fileName, date, title, tags, image } = frontMatter;
 
   return (
     <SectionContainer>
       <BlogSEO
         url={`${siteMetadata.siteUrl}/blog/${slug}`}
         authorDetails={authorDetails}
+        ogImage={image}
         {...frontMatter}
       />
       <article>
