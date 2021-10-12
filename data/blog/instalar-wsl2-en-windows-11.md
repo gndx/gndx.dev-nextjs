@@ -3,11 +3,15 @@ title: 'Instalar WSL2 en Windows 11'
 summary: "Como instalar Windows Subsystem Linux (WSL 2) en Windows 11"
 date: '2021-10-12T03:26:17.542Z'
 tags: [Windows, Programacion, recursos]
-image: 
+image: https://arepa.s3.amazonaws.com/instalar-wsl2-windows-11.png
 draft: false
 ---
 
+
 **Windows SubSystem Linux** mejor conocido como WSL o WSL2 es una herramienta que permite a los usuarios de **Windows 10** y **Windows 11** ejecutar distribuciones GNU/Linux sin necesidad de instalar software adicional de terceros o cambiar de sistema operativo, actualmente soporte distribuciones GNU/Linux como Ubuntu, Debian, Fedora, Suse entre otros que puedes encontrar en la tienda de aplicaciones.
+
+![gndx instalar wsl2 en windows 11](https://arepa.s3.amazonaws.com/instalar-wsl2-windows-11.png)
+
 
 La última versión de **Windows SubSystem Linux** es conocida como WSL2 entre las principales características que nos ofrece WSL2 se encuentran:
 
@@ -30,7 +34,7 @@ Lo primero que tenemos que realizar es iniciar la aplicación "**Windows Termina
 ```bash
 wsl --install
 ```
-![enter image description here](https://arepa.s3.amazonaws.com/windows-terminal-gndx-instalar-wsl2.png)
+![instalar wsl2 en windows 11](https://arepa.s3.amazonaws.com/windows-terminal-gndx-instalar-wsl2.png)
 
 Sigue las instrucciones en pantalla y espera a que termine la instalación.
 
@@ -43,7 +47,7 @@ Distribuciones que recomiendo utilizar:
 
 En mi  configuración utilizo "**Ubuntu 20.04 LTS**" instalado desde "[Microsoft Store](https://www.microsoft.com/es-co/store/apps/windows)". (*Puedes instalar la version de GNU/Linux de tu eleccion.*)
 
-![enter image description here](https://arepa.s3.amazonaws.com/instalar-ubuntu-windows-11.png)
+![instalar ubuntu 20.04 en windows 11](https://arepa.s3.amazonaws.com/instalar-ubuntu-windows-11.png)
 
 4. Una vez instalado es necesario reiniciar nuestra computadora para poder iniciar la instalación de Ubuntu y configurar nuestro usuario.
 
