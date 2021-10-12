@@ -14,12 +14,14 @@ const CommonSEO = ({ title, description, ogType, ogImage }) => {
       <meta property="og:site_name" content={siteMetadata.title} />
       <meta property="og:description" content={description} />
       <meta property="og:title" content={title} />
-      <meta property="og:image" content={ogImage} key={ogImage} />
+      <meta property="og:image" content={ogImage} />
+      <meta property="og:locale" content="es_ES" />
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:site" content={siteMetadata.twitter} />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={ogImage} />
+      <meta name="twitter:site" content="@gndx" />
+      <meta name="twitter:creator" content="@gndx" />
     </Head>
   )
 }
@@ -30,7 +32,7 @@ export const PageSEO = ({ title, description, ogImage }) => {
       title={title}
       description={description}
       ogType="website"
-      ogImage={ogImageUrl}
+      ogImage={ogImage}
     />
   )
 }
@@ -43,7 +45,7 @@ export const TagSEO = ({ title, description, ogImage }) => {
         title={title}
         description={description}
         ogType="website"
-        ogImage={ogImageUrl}
+        ogImage={ogImage}
       />
       <Head>
         <link
