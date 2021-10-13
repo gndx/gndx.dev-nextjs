@@ -1,7 +1,6 @@
 import Link from "@/components/Link";
 import { PageSEO } from "@/components/SEO";
 import Tag from "@/components/Tag";
-import { BlogNewsletterForm } from "@/components/NewsletterForm";
 import HeroStreams from "@/components/HeroStreams";
 import siteMetadata from "@/data/siteMetadata";
 import { getAllFilesFrontMatter } from "@/lib/mdx";
@@ -22,6 +21,7 @@ export default function Home({ posts }) {
       <PageSEO
         title={siteMetadata.title}
         description={siteMetadata.description}
+        ogImage="https://arepa.s3.amazonaws.com/og-gndx-dev-avatar.png"
       />
       <div>
         <div className="flex flex-col items-center xl:flex-row gap-x-12">
