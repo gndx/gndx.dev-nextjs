@@ -39,7 +39,7 @@ export default function Home({ posts }) {
             <img
               src="https://arepa.s3.amazonaws.com/oscar-barajas-tavares.png"
               alt="Oscar Barajas Tavares"
-              className="w-42 rounded-full"
+              className="w-42 rounded-full hidden md:block"
             />
             {/* <BlogNewsletterForm title="Stay updated, receive the latest post straight to your mailbox" /> */}
           </div>
