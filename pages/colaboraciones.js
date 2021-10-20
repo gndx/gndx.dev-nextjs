@@ -30,7 +30,7 @@ export default function Collaborations() {
         </div>
         <div className="container py-12">
           <div className="w-full">
-            <form className="w-full max-w-lg mx-auto my-5" action="https://www.actionforms.io/e/r/gndx-form" method="post">
+            <form className="w-full max-w-lg mx-auto my-5" action="https://www.actionforms.io/e/r/gndx-form" method="any">
               <div className="flex flex-wrap -mx-3 mb-6">
                 <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                   <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
