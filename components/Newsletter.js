@@ -5,21 +5,23 @@ const Newsletter = () => {
     <div class="m-3">
       <form
         class="mb-4"
-        action="https://tinyletter.com/gndxdev"
+        action="https://www.getrevue.co/profile/gndx/add_subscriber"
         method="post"
-        target="popupwindow"
+        id="revue-form"
+        name="revue-form"
+        target="_blank"
       >
         <div class="mb-3">
           <label
-            for="tlemail"
+            for="member_email"
             class="block mb-2 text-md font-medium text-gray-600 dark:text-gray-400"
           >
             ¡Suscríbete al newsletter!
           </label>
           <input
             type="text"
-            name="email"
-            id="tlemail"
+            name="member[email]"
+            id="member_email"
             placeholder="Tu correo electrónico"
             class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500"
           />
@@ -28,7 +30,9 @@ const Newsletter = () => {
           <input type="hidden" value="1" name="embed" />
           <input
             type="submit"
-            value="Suscribirse"
+            value="Subscribe"
+            name="member[subscribe]"
+            id="member_submit"
             class="cursor-pointer w-full px-1 py-2 text-white bg-indigo-500 rounded-md hover:bg-indigo-600 focus:outline-none duration-100 ease-in-out"
           />
         </div>
