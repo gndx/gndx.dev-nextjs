@@ -6,6 +6,7 @@ import siteMetadata from "@/data/siteMetadata";
 import { getAllFilesFrontMatter } from "@/lib/mdx";
 import formatDate from "@/lib/utils/formatDate";
 import Newsletter from "@/components/Newsletter";
+import YouTube from "@/components/YouTube";
 
 const MAX_DISPLAY = 12;
 
@@ -50,8 +51,8 @@ export default function Home({ posts }) {
         </h2>
         <span className="flex pb-6">📰 Artículos más recientes</span>
         <hr className="border-gray-200 dark:border-gray-700" />
-        <div class="pb-8 divide-y divide-gray-200 xl:divide-y-0 dark:divide-gray-700 xl:grid xl:grid-cols-4 xl:gap-x-6">
-          <div class="divide-y divide-gray-200 dark:divide-gray-700 xl:pb-0 xl:col-span-3 xl:row-span-2">
+        <div className="pb-8 divide-y divide-gray-200 xl:divide-y-0 dark:divide-gray-700 xl:grid xl:grid-cols-4 xl:gap-x-6">
+          <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:pb-0 xl:col-span-3 xl:row-span-2">
             <ul>
               {!posts.length && "No posts found."}
               {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
@@ -91,8 +92,9 @@ export default function Home({ posts }) {
               })}
             </ul>
           </div>
-          <div class="pt-6 pb-10 xl:pt-4 xl:border-b xl:border-gray-200 xl:dark:border-gray-700">
+          <div className="pt-6 pb-10 xl:pt-4 xl:border-b xl:border-gray-200 xl:dark:border-gray-700">
             <Newsletter />
+            <YouTube />
           </div>
         </div>
       </div>
