@@ -1,0 +1,164 @@
+{
+  "kind": "youtube#searchListResponse",
+  "etag": "uyF3WoHpDxrUKByRckz5Fg26Q30",
+  "nextPageToken": "CAUQAA",
+  "regionCode": "CO",
+  "pageInfo": { "totalResults": 140, "resultsPerPage": 5 },
+  "items": [
+    {
+      "kind": "youtube#searchResult",
+      "etag": "lDm6BrTMivCOAy_NggNYEUFI9GQ",
+      "id": { "kind": "youtube#video", "videoId": "8iZauq1wRpY" },
+      "snippet": {
+        "publishedAt": "2021-10-24T05:00:44Z",
+        "channelId": "UCw05fUBPwmpu-ehXFMqfdMw",
+        "title": "Revisión de código a suscriptores",
+        "description": "Codereview a suscriptores Más informacion: https://gndx.dev/blog/revision-portafolios-octubre-2021 Ahorra $100 USD en tu suscripción a Platzi: ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/8iZauq1wRpY/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/8iZauq1wRpY/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/8iZauq1wRpY/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Oscar Barajas",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-10-24T05:00:44Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "sDXWjE12lFP_Y2MgGKlZKNMN3CQ",
+      "id": { "kind": "youtube#video", "videoId": "EvCAJKMXOpE" },
+      "snippet": {
+        "publishedAt": "2021-10-23T04:41:39Z",
+        "channelId": "UCw05fUBPwmpu-ehXFMqfdMw",
+        "title": "Revisando portafolios de suscriptores octubre 2021",
+        "description": "Regresamos la dinámica este viernes 22 de octubre donde tendremos la revisión de 10 proyectos y de forma aleatoria también revisaremos el código fuente de ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/EvCAJKMXOpE/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/EvCAJKMXOpE/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/EvCAJKMXOpE/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Oscar Barajas",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-10-23T04:41:39Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "n6NPT4fj9hHCL48AuPFuAZq0PSk",
+      "id": { "kind": "youtube#video", "videoId": "N3CrA0EF1nM" },
+      "snippet": {
+        "publishedAt": "2021-10-22T06:45:00Z",
+        "channelId": "UCw05fUBPwmpu-ehXFMqfdMw",
+        "title": "Como encontrar y mantener la motivación en Programación",
+        "description": "Encontrar y mantener la motivación, estas son mis recomendaciones para triunfar a la hora de crear proyectos que permitan demostrar tus habilidades como ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/N3CrA0EF1nM/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/N3CrA0EF1nM/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/N3CrA0EF1nM/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Oscar Barajas",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-10-22T06:45:00Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "c5rUfGQsVyRJEJ3iEGaWj7n5luo",
+      "id": { "kind": "youtube#video", "videoId": "uIN5u-mP4Fw" },
+      "snippet": {
+        "publishedAt": "2021-10-19T18:05:51Z",
+        "channelId": "UCw05fUBPwmpu-ehXFMqfdMw",
+        "title": "¿Cuánto tiempo se tarda en aprender React?",
+        "description": "Una de las preguntas que más me hacen como profesor de ReactJS es \"¿Cuánto tiempo puedo aprender React?\" Existen muchos caminos y formas para ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/uIN5u-mP4Fw/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/uIN5u-mP4Fw/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/uIN5u-mP4Fw/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Oscar Barajas",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-10-19T18:05:51Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "suSfnxeXf3TFaNehwazJuC879qQ",
+      "id": { "kind": "youtube#video", "videoId": "WJm_x_jyRog" },
+      "snippet": {
+        "publishedAt": "2021-10-17T04:20:59Z",
+        "channelId": "UCw05fUBPwmpu-ehXFMqfdMw",
+        "title": "📦GNDX /dev/night talks 🔥 :  Noche de preguntas...",
+        "description": "Hablemos de todo y también de nada. Bienvenidos a las pláticas nocturnas con Oscar Barajas. Ahorra $100 USD en tu suscripción a Platzi: ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/WJm_x_jyRog/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/WJm_x_jyRog/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/WJm_x_jyRog/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Oscar Barajas",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-10-17T04:20:59Z"
+      }
+    }
+  ]
+}

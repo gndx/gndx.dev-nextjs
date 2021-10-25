@@ -30,7 +30,7 @@ export default function Cursos() {
         </div>
         <div className="container py-12">
           <div className="grid grid-cols-3 gap-4">
-            {coursesData.map((course) => (
+            {coursesData?.map((course) => (
               <div className="flex items-center bg-white border border-gray-200 rounded-lg shadow shadow-lg p-3 w-full">
                 <img src={course.badge} width="78" className="mr-4 rounded" />
                 <div className="text-gray-700">
