@@ -4,6 +4,7 @@ import random from '@/lib/random';
 
 const YouTube = () => {
   const videos = random(youtube.items);
+  console.log(videos)
   return (
     <>
       <h4 className="text-xs tracking-wide text-gray-500 uppercase dark:text-gray-400 mb-2">Ultimo Video</h4>
@@ -15,9 +16,8 @@ const YouTube = () => {
           target="_blank"
           rel="noopener noreferrer">
           <figure>
-            <img className="rounded-md mb-2" src={video?.snippet?.thumbnails?.medium?.url} alt={video?.snippet?.title} />
+            <img className="rounded-md mb-8" src={video?.snippet?.thumbnails?.medium?.url} alt={video?.snippet?.title} />
           </figure>
-          <p className="text-md text-sm text-center text-gray-400">{video?.snippet?.title}</p>
         </a>
       ))}
     </>

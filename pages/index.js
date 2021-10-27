@@ -7,6 +7,7 @@ import { getAllFilesFrontMatter } from "@/lib/mdx";
 import formatDate from "@/lib/utils/formatDate";
 import Newsletter from "@/components/Newsletter";
 import YouTube from "@/components/YouTube";
+import SocialMedia from "@/components/socialMedia";
 
 const MAX_DISPLAY = 12;
 
@@ -95,6 +96,7 @@ export default function Home({ posts }) {
           <div className="pt-6 pb-10 xl:pt-4 xl:border-b xl:border-gray-200 xl:dark:border-gray-700">
             <Newsletter />
             <YouTube />
+            <SocialMedia />
           </div>
         </div>
       </div>
