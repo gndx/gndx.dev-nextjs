@@ -4,7 +4,6 @@ import random from '@/lib/random';
 
 const YouTube = () => {
   const videos = random(youtube.items);
-  console.log(videos)
   return (
     <>
       <h4 className="text-xs tracking-wide text-gray-500 uppercase dark:text-gray-400 mb-2">Ultimo Video</h4>
