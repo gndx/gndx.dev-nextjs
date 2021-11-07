@@ -28,22 +28,24 @@ export default function Cursos() {
             Estudiantes
           </p>
         </div>
-        <div className="container py-12">
-          <div className="grid grid-cols-3 gap-4">
-            {coursesData?.map((course) => (
-              <div className="flex items-center bg-white border border-gray-200 rounded-lg shadow shadow-lg p-3 w-full">
-                <img src={course.badge} width="78" className="mr-4 rounded" />
-                <div className="text-gray-700">
-                  <h2 className="text-gray-800 font-bold text-2md">
+        <div className="container">
+          <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 py-12">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {coursesData?.map((course) => (
+                <div className="w-full bg-gray rounded-lg sahdow-lg overflow-hidden flex flex-col justify-center items-center" key={`courses-${course.reviews}`}>
+                  <div>
+                    <img className="object-center object-fill h-32 w-full" src={course.badge} alt="photo" />
+                  </div>
+                  <div className="text-center py-8 sm:py-6">
                     <a href={course.url} target="_blank" rel="referrer noreferrer">
-                      {course.title}
+                      <p className="text-xl text-gray-700 font-bold mb-2">{course.title}</p>
+                      <p className="text-base text-gray-400 font-normal">{course.reviews} Opiniones</p>
                     </a>
-                  </h2>
-                  <p className="text-sm">{course.reviews} Opiniones</p>
+                  </div>
                 </div>
-              </div>
-            ))}
-          </div>
+              ))}
+            </div>
+          </section>
         </div>
       </div>
     </>
