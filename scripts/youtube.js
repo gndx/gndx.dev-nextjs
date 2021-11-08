@@ -4,7 +4,7 @@ const fs = require('fs');
 const youtubeApiUrl = 'https://www.googleapis.com/youtube/v3/search';
 const channelId = 'UCw05fUBPwmpu-ehXFMqfdMw';
 const youtubeKeyId = 'AIzaSyDIKiForJSN7to1rtV2W9ErOcYJ6ltdM8M';
-const maxResults = '5';
+const maxResults = '10';
 
 const getLastYoutubeVideo = async () => {
     const API = `${youtubeApiUrl}?part=snippet&channelId=${channelId}&maxResults=${maxResults}&order=date&type=video&key=${youtubeKeyId}`;
