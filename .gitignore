@@ -18,8 +18,11 @@ public/sitemap.xml
 /build
 *.xml
 
+# draft
+/data/draft
+
 # rss feed
-/public/feed.xml 
+/public/feed.xml
 
 # misc
 .DS_Store
