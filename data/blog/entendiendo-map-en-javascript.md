@@ -18,6 +18,7 @@ Tenemos una lista de productos que comprara un usuario y queremos obtener solame
 
 Para entender un poco más el ejemplo vamos a resolverlo sin el método map(), para ello utilizaremos el método for().
 
+```js
     const products = [
         { id: "1", name: "shirt", category: "clothing" },
         { id: "2", name: "Sports Tennis", category: "accessories" },
@@ -33,13 +34,14 @@ Para entender un poco más el ejemplo vamos a resolverlo sin el método map(), p
     }
 
     console.log(nameOfProducts); // ["shirt","Sports Tennis","Casual shoes","skirt","tie"]
-
+```
 
 **Ahora resolvamos el problema con el método map()**
 map() recibe como parámetro una función la cual recibe 3 parámetros, el elemento actual, indice del elemento actual y el arreglo original.
 
 arreglo.map(function(elementoActual, indice, arregloOriginal) {  ... código });
 
+```js
     const products = [
         { id: "1", name: "shirt", category: "clothing" },
         { id: "2", name: "Sports Tennis", category: "accessories" },
@@ -53,6 +55,7 @@ arreglo.map(function(elementoActual, indice, arregloOriginal) {  ... código })
     })
 
     console.log(nameOfProducts2); // ["shirt", "Sports Tennis", "Casual shoes", "skirt", "tie"]
+```
 
 En Conclusión:
 
