@@ -39,9 +39,9 @@ Para entender un poco más el ejemplo vamos a resolverlo sin el método map(), p
 **Ahora resolvamos el problema con el método map()**
 map() recibe como parámetro una función la cual recibe 3 parámetros, el elemento actual, indice del elemento actual y el arreglo original.
 
-arreglo.map(function(elementoActual, indice, arregloOriginal) {  ... código });
-
 ```js
+    arreglo.map(function(elementoActual, indice, arregloOriginal) {  ... código });
+
     const products = [
         { id: "1", name: "shirt", category: "clothing" },
         { id: "2", name: "Sports Tennis", category: "accessories" },
