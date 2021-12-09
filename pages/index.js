@@ -47,7 +47,7 @@ export default function Home({ posts }) {
           </div>
         </div>
         <HeroStreams />
-        <h2 className="flex pb-6 text-2xl font-extrabold tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl md:text-5xl">
+        <h2 className="pt-8 flex pb-6 text-2xl font-extrabold tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl md:text-5xl">
           ¿Hoy que aprenderás?
         </h2>
         <span className="flex pb-6">📰 Artículos más recientes</span>
