@@ -318,6 +318,6 @@ const GndxBadgeArtifacts = {
     },
     { inputs: [], name: 'withdraw', outputs: [], stateMutability: 'payable', type: 'function' },
   ],
-}
+};
 
 export default GndxBadgeArtifacts;
