@@ -5,12 +5,12 @@ import useGndxBadge from '@hooks/useGndxBadge'
 import { ellipseAddress } from '@utils/ellipseAddress'
 import { XCircleIcon } from '@heroicons/react/solid'
 import axios from 'axios';
+import Cookies from 'js-cookie'
 
 export const Home = () => {
   const [maxSupply, setMaxSupply] = useState(0)
   const [totalSupply, setTotalSupply] = useState(0)
   const [isMinting, setIsMinting] = useState(false)
-  const [request, setRequest] = useState(false);
 
   const [alert, setAlert] = useState({
     active: false,
@@ -60,6 +60,7 @@ export const Home = () => {
           from: account,
         })
         .on('transactionHash', (txHash) => {
+          Cookies.set('requestToken', txHash, { expires: 7 });
           setAlert({
             active: true,
             title: 'transactionHash',
@@ -71,7 +72,7 @@ export const Home = () => {
           setIsMinting(false)
           setAlert({
             active: true,
-            title: 'Conffirmed',
+            title: 'Confirmed',
             description: 'NFT minted',
             status: 'success',
           })
@@ -90,39 +91,53 @@ export const Home = () => {
 
   const handleRequest = (event) => {
     event.preventDefault();
-    if (account) {
-      const data = {
-        'wallet': account,
-        'timestamp': new Date().getTime()
-      }
-      axios.post('https://ceroafrontend.com/api/request', data)
-        .then(response => {
-          if (response.data.success) {
-            setAlert({
-              active: true,
-              title: 'Success',
-              description: response.data.success,
-              status: 'success',
-            });
-          } else {
+    const isRequest = Cookies.get('requestToken');
+
+    if (isRequest) {
+      setAlert({
+        active: true,
+        title: 'Error',
+        description: 'You have already requested a badge',
+        status: 'error',
+      });
+    } else {
+      if (account) {
+        const data = {
+          'wallet': account,
+          'timestamp': new Date().getTime(),
+          'date': new Date().toLocaleString(),
+          'network': isPolygonNetwork ? 'Polygon' : 'Ethereum',
+        }
+        axios.post('/api/request', data)
+          .then(response => {
+            if (response.data.success) {
+              localStorage.setItem('request', true);
+              Cookies.set('requestToken', new Date().getTime(), { expires: 7 });
+              setAlert({
+                active: true,
+                title: 'Success',
+                description: 'Solicitud enviada',
+                status: 'success',
+              });
+            } else {
+              setAlert({
+                active: true,
+                title: 'Error',
+                description: error.message,
+                status: 'error',
+              });
+            }
+          }).catch(error => {
             setAlert({
               active: true,
               title: 'Error',
               description: error.message,
               status: 'error',
             });
-          }
-        }).catch(error => {
-          setRequest(false);
-          setAlert({
-            active: true,
-            title: 'Error',
-            description: error.message,
-            status: 'error',
           });
-        });
-    } else {
-      setAlert(true);
+      } else {
+        setAlert(true);
+      }
     }
   }
 
