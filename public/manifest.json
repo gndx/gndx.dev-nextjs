@@ -7,7 +7,7 @@
   "start_url": "/",
   "name": "Oscar Barajas",
   "short_name": "gndx.dev",
-  "description": "Foundation Layer at @platzi - Microsoft MVP - Lead at Developer Circles from Facebook - I teach React &amp;amp; Svelte.",
+  "description": "Foundation Layer at Platzi - Microsoft MVP - Lead at Developer Circles from Facebook, I teach React & Svelte - #Web3 #BTC #ETH - #Twitch Partner - 🇲🇽 🇨🇴",
   "icons": [
     {
       "src": "/icon-192x192.png",
@@ -39,7 +39,5 @@
       "description": "Gndx.dev Home Screen"
     }
   ],
-  "categories": [
-    "blog"
-  ]
+  "categories": ["blog"]
 }

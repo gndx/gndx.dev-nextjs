@@ -32,16 +32,14 @@ export default function Home({ posts }) {
               Oscar Barajas Tavares
             </h1>
             <h2 className="text-lg prose text-gray-600 dark:text-gray-400">
-              Foundation Layer at @platzi - Microsoft MVP - Lead at Developer
-              Circles from Facebook, I teach React & Svelte - #Twitch Partner
-              #EStreamerCoders - 🇲🇽 🇨🇴
+              Foundation Layer at Platzi - Microsoft MVP - Lead at Developer Circles from Facebook, I teach React & Svelte - #Web3 #BTC #ETH - #Twitch Partner - 🇲🇽 🇨🇴
             </h2>
           </div>
           <div className="flex items-center justify-center mx-2 w-48">
             <img
               src="https://arepa.s3.amazonaws.com/oscar-barajas-tavares.png"
               alt="Oscar Barajas Tavares"
-              className="w-42 rounded-full hidden md:block"
+              className="w-42 rounded-full hidden xl:block"
             />
             {/* <BlogNewsletterForm title="Stay updated, receive the latest post straight to your mailbox" /> */}
           </div>
