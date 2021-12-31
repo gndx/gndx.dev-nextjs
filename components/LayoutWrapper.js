@@ -11,13 +11,13 @@ const LayoutWrapper = ({ children }) => {
 
   const logClickEvent = () => {
     logGAEvent('subscribe_youtube');
-  }
+  };
 
   useEffect(() => {
-    let timer1 = setTimeout(() => setShow(true), 10 * 1000)
+    let timer1 = setTimeout(() => setShow(true), 10 * 1000);
     return () => {
-      clearTimeout(timer1)
-    }
+      clearTimeout(timer1);
+    };
   }, []);
 
   return (

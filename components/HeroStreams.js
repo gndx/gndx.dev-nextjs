@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const HeroStreams = () => {
   return (
@@ -10,11 +10,7 @@ const HeroStreams = () => {
               <img src="https://arepa.s3.amazonaws.com/twitter-gndx.png" alt="Youtube" />
             </figure>
             <div className="Header-title">
-              <a
-                href="https://twitter.com/gndx"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="https://twitter.com/gndx" target="_blank" rel="noopener noreferrer">
                 <h2>
                   <span className="mb-2">Twitter</span>@gndx
                 </h2>
@@ -42,11 +38,7 @@ const HeroStreams = () => {
               <img src="https://arepa.s3.amazonaws.com/instagram-gndx.png" alt="Youtube" />
             </figure>
             <div className="Header-title">
-              <a
-                href="https://instagram.com/gndx"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="https://instagram.com/gndx" target="_blank" rel="noopener noreferrer">
                 <h2>
                   <span className="mb-2">Instagram</span>@gndx
                 </h2>
@@ -68,7 +60,7 @@ const HeroStreams = () => {
         </div>
       </div>
     </header>
-  )
-}
+  );
+};
 
-export default HeroStreams
+export default HeroStreams;

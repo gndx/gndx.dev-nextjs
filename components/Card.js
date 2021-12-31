@@ -1,12 +1,12 @@
-import Image from './Image'
-import Link from './Link'
+import Image from './Image';
+import Link from './Link';
 
-import { logEvent as logGAEvent } from './analytics/GoogleAnalytics'
+import { logEvent as logGAEvent } from './analytics/GoogleAnalytics';
 
 const Card = ({ title, description, imgSrc, href }) => {
   const logClickEvent = () => {
-    logGAEvent('view_project')
-  }
+    logGAEvent('view_project');
+  };
 
   return (
     <div className="p-4 md:w-1/2 md" style={{ maxWidth: '544px' }}>
@@ -54,7 +54,7 @@ const Card = ({ title, description, imgSrc, href }) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Card
+export default Card;

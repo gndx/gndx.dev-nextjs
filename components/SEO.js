@@ -1,9 +1,9 @@
-import Head from 'next/head'
-import { useRouter } from 'next/router'
-import siteMetadata from '@/data/siteMetadata'
+import Head from 'next/head';
+import { useRouter } from 'next/router';
+import siteMetadata from '@/data/siteMetadata';
 
 const CommonSEO = ({ title, description, ogType, ogImage }) => {
-  const router = useRouter()
+  const router = useRouter();
   return (
     <Head>
       <title>{title}</title>
@@ -23,30 +23,18 @@ const CommonSEO = ({ title, description, ogType, ogImage }) => {
       <meta name="twitter:site" content="@gndx" />
       <meta name="twitter:creator" content="@gndx" />
     </Head>
-  )
-}
+  );
+};
 
 export const PageSEO = ({ title, description, ogImage }) => {
-  return (
-    <CommonSEO
-      title={title}
-      description={description}
-      ogType="website"
-      ogImage={ogImage}
-    />
-  )
-}
+  return <CommonSEO title={title} description={description} ogType="website" ogImage={ogImage} />;
+};
 
 export const TagSEO = ({ title, description, ogImage }) => {
-  const router = useRouter()
+  const router = useRouter();
   return (
     <>
-      <CommonSEO
-        title={title}
-        description={description}
-        ogType="website"
-        ogImage={ogImage}
-      />
+      <CommonSEO title={title} description={description} ogType="website" ogImage={ogImage} />
       <Head>
         <link
           rel="alternate"
@@ -56,27 +44,27 @@ export const TagSEO = ({ title, description, ogImage }) => {
         />
       </Head>
     </>
-  )
-}
+  );
+};
 
 export const BlogSEO = ({ authorDetails, title, summary, date, lastmod, url, ogImage }) => {
-  const router = useRouter()
-  const publishedAt = new Date(date).toISOString()
-  const modifiedAt = new Date(lastmod || date).toISOString()
+  const router = useRouter();
+  const publishedAt = new Date(date).toISOString();
+  const modifiedAt = new Date(lastmod || date).toISOString();
 
-  let authorList
+  let authorList;
   if (authorDetails) {
     authorList = authorDetails.map((author) => {
       return {
         '@type': 'Person',
         name: author.name,
-      }
-    })
+      };
+    });
   } else {
     authorList = {
       '@type': 'Person',
       name: siteMetadata.author,
-    }
+    };
   }
 
   const structuredData = {
@@ -100,16 +88,11 @@ export const BlogSEO = ({ authorDetails, title, summary, date, lastmod, url, ogI
       },
     },
     description: summary,
-  }
+  };
 
   return (
     <>
-      <CommonSEO
-        title={title}
-        description={summary}
-        ogType="article"
-        ogImage={ogImage}
-      />
+      <CommonSEO title={title} description={summary} ogType="article" ogImage={ogImage} />
       <Head>
         {date && <meta property="article:published_time" content={publishedAt} />}
         {lastmod && <meta property="article:modified_time" content={modifiedAt} />}
@@ -122,5 +105,5 @@ export const BlogSEO = ({ authorDetails, title, summary, date, lastmod, url, ogI
         />
       </Head>
     </>
-  )
-}
+  );
+};
