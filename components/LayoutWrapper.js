@@ -7,18 +7,11 @@ import Footer from './Footer';
 import MobileNav from './MobileNav';
 
 const LayoutWrapper = ({ children }) => {
-  const [show, setShow] = useState(false);
+  const [show, setShow] = useState(true);
 
   const logClickEvent = () => {
     logGAEvent('subscribe_youtube');
   };
-
-  useEffect(() => {
-    let timer1 = setTimeout(() => setShow(true), 10 * 1000);
-    return () => {
-      clearTimeout(timer1);
-    };
-  }, []);
 
   return (
     <>
