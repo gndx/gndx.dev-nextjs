@@ -1,9 +1,8 @@
-const defaultTheme = require('tailwindcss/defaultTheme')
-const colors = require('tailwindcss/colors')
+const defaultTheme = require('tailwindcss/defaultTheme');
+const colors = require('tailwindcss/colors');
 
 module.exports = {
-  mode: 'jit',
-  purge: ['./pages/**/*.js', './components/**/*.js', './layouts/**/*.js', './lib/**/*.js'],
+  purge: ['./src/**/*.{html,js}'],
   theme: {
     extend: {
       spacing: {
@@ -159,4 +158,4 @@ module.exports = {
     typography: ['dark'],
   },
   plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')],
-}
+};

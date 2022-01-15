@@ -2,7 +2,7 @@ const siteMetadata = {
   title: 'Oscar Barajas Tavares',
   author: 'Oscar Barajas Tavares',
   headerTitle: 'Oscar Barajas Tavares',
-  description: 'Foundation Layer at Platzi - Microsoft MVP - Lead at Developer Circles from Facebook, I teach React & Svelte - #Web3 #BTC #ETH - #Twitch Partner - 🇲🇽 🇨🇴',
+  description: 'Foundation Layer at Platzi - Microsoft MVP - Lead at Developer Circles from Meta, I teach React & Svelte - #Web3 #BTC #ETH - #Twitch Partner - 🇲🇽 🇨🇴',
   language: 'es-mx',
   siteUrl: 'https://gndx.dev',
   siteRepo: 'https://github.com/gndx/gndx.dev',
