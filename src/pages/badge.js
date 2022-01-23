@@ -145,7 +145,7 @@ export const Home = () => {
 
   const handleFocus = () => {
     const value = tokenRef.current.value.toLowerCase();
-    if (value === '0xgndx') {
+    if (value === '0x0xgndx') {
       setIsMinting(true);
       localStorage.setItem('tokenRef', true);
     }
