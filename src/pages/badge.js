@@ -22,9 +22,10 @@ export const Home = () => {
 
   const mintAmount = 1;
 
-  const { active, activate, deactivate, account, error, chainId } = useWeb3React();
+  const { activate, deactivate, account, error, chainId } = useWeb3React();
   const gndxBadge = useGndxBadge();
   const isPolygonNetwork = chainId === 137;
+  const actives = false;
 
   const isUnsupportedChain = error instanceof UnsupportedChainIdError;
 
@@ -179,7 +180,7 @@ export const Home = () => {
                 Recibe uno de los 300 NFTs (non-fungible token) disponibles en agradecimiento por
                 participar en mi mas reciente platica sobre Web3.
               </p>
-              {active && (
+              {actives && (
                 <span className="sm:inline text-xs font-semibold p-2 bg-green-200 text-teal-700 rounded-md mr-4">
                   {ellipseAddress(account)} -{' '}
                   <XCircleIcon
@@ -311,7 +312,7 @@ export const Home = () => {
                         </div>
                       </div>
                     )}
-                    {active ? (
+                    {actives ? (
                       <>
                         {isPolygonNetwork && (
                           <span className="flex text-sm block mb-1" role="img" aria-label="Box">
@@ -324,12 +325,13 @@ export const Home = () => {
                         <button
                           className="inline-block items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
                           onClick={connect}
+                          disabled
                         >
-                          {isUnsupportedChain ? 'Red no Soportada' : 'Conectar wallet'}
+                          {isUnsupportedChain ? 'Red no Soportada' : 'NFT Agotados, gracias por participar.'}
                         </button>
                       </>
                     )}
-                    {active && (
+                    {actives && (
                       <div className="block">
                         {!isUnsupportedChain && (
                           <div className="flex">
