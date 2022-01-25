@@ -3,6 +3,8 @@ title: ¿Por qué todos hablan de WEB 3?
 summary: Es una moda, una tendencia, que está pasando en el ecosistema de desarrollo web que todos hablan de WEB 3
 date: 2022-01-25
 tags: ['ethereum', 'web3', 'blockchain', 'criptomonedas']
+image: https://arepa.s3.amazonaws.com/que-es-web-3.png
+draft: false
 ---
 
 # Hablemos de Web3
