@@ -21,6 +21,6 @@ No estamos reinventando la rueda, la web sigue siendo la web, entender como se m
 
 Te dejo mi video donde abordo más a detalle el tema:
 
-<div class="embed-container">
+<div className="embed-container">
 <iframe src="https://www.youtube.com/embed/DwuGGibuS1Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>

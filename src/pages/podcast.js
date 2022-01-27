@@ -19,7 +19,7 @@ export default function Projects() {
             a Error 418 con Oscar Barajas Tavares @gndx.
           </p>
 
-          <div class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 px-4 items-center">
+          <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 px-4 items-center">
             <a href="https://open.spotify.com/show/0FmtewBzfG64SOilzlnDuK" target="_blank">
               <img src="https://arepa.s3.amazonaws.com/spotify-podcast-badge-blk-grn-330x80.png" width="160" alt="Spotify" />
             </a>

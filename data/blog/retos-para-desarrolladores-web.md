@@ -11,7 +11,7 @@ Hace tiempo realicé un video explicando como puedes retarte y trabajar con proy
 
 **10 Retos para desarrolladores Web**
 
-<div class="embed-container">
+<div className="embed-container">
     <iframe src="https://www.youtube.com/embed/6M6pkfyr-qE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 

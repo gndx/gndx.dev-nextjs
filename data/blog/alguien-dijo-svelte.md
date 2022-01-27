@@ -27,7 +27,7 @@ Una vez que pasaste por la documentación, entendiste que particulares son impor
 #### ¿Por qué Svelte podría ser el mejor framework de JavaScript?
 Este video lo realicé a inicios del 2020 donde te cuento las principales particularidades de Svelte y lograr sacarle el mayor provecho y entender el porqué sera mejor framework.
 
-<div class="embed-container">
+<div className="embed-container">
 <iframe src="https://www.youtube.com/embed/YyF_9Tg0DcE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
