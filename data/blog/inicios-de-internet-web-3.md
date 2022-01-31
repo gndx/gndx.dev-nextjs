@@ -25,13 +25,15 @@ Puedo decir que me toco vivir parte de la **WEB 1.0,** mis inicios en internet s
 
 ## WEB 2.0
 
-Puedo decir que viví la experiencia de ser parte de los inicios de la Web 2.0, mis inicios fueron en el 2001 con mis primeras páginas web y no fue hasta el 2003 que empece a publica los primeros sitios web, mis blogs, particularmente compartiendo mi conocimiento en GNU/Linux, formar parte de la tecnologia y compartir con mas personas que apostaron por igual a esta revolusion en internet. Me toco ver el nacimiento y la muerte de tecnologías, propuestas que se mantienen al día de hoy y la evolución de otras tecnologías que hoy utilizamos, Ya no es lo mismo hacer una página web hoy en día que hace 20 años. Lo que queremos rescatar de la **WEB 2.0** es forma en que podemos compartir fácilmente informacion y es por esto que dio al nacimiento de las redes sociales las cuales nos permitían compartir, crear y estar comunicados, por lo tanto definimos a la WEB 2.0 como "Lectura y Escritura".
+Puedo decir que viví la experiencia de ser parte de los inicios de la Web 2.0, mis inicios fueron en el 2001 con mis primeras páginas web y no fue hasta el 2003 que empece a pública los primeros sitios web, mis blogs, particularmente compartiendo mi conocimiento en GNU/Linux, formar parte de la tecnología y compartir con más personas que apostaron por igual a esta revolución en internet. Me toco ver el nacimiento y la muerte de tecnologías, propuestas que se mantienen al día de hoy y la evolución de otras tecnologías que hoy utilizamos, Ya no es lo mismo hacer una página web hoy en día que hace 20 años. Lo que queremos rescatar de la **WEB 2.0** es forma en que podemos compartir fácilmente informacion y es por esto que dio al nacimiento de las redes sociales las cuales nos permitían compartir, crear y estar comunicados, por lo tanto, definimos a la WEB 2.0 como "Lectura y Escritura".
 
 ## WEB 3
 
 Nada esta escrito y esto es lo más genial de todo, puesto que estamos en una etapa donde podemos construir las bases que darán el impulso a WEB3. Recapitulando podemos decir que la WEB 1.0 era de solamente lectura, con la llegada de la WEB 2.0 tendríamos lectura y escritura y ahora con WEB 3 tendremos "**Propiedad**".
 
-Quiero terminar mencionando algo muy importante: **_Web3 no solo son NFTs_**, va a haber mucho más allá y se trata de **PROPIEDAD**. Podemos llevarlo a otras áreas, pero son puntos frágiles. Nos llevará a hacer cosas sorprendentes si lo vemos como una oportunidad.
+Quiero terminar mencionando algo muy importante: **_Web3 no solo son NFTs_**, va a haber mucho más allá y se trata de **PROPIEDAD**. Podemos llevarlo a otras áreas, pero son puntos frágiles. Nos llevará a hacer cosas sorprendentes si lo vemos como una oportunidad de incorporar tecnologias como Blockachin, criptografia y el potencial que nos ofrecen las criptomonedas.
+
+Lo vuelvo a repetir, WEB 3 no es solo NFTs, Bitcoin, Ethereum, Blockchain, es mucho más grande, es el inicio de una nueva forma de ver internet y la forma en que podemos incorporar tecnología a nuestro día a día.
 
 Recientemente, participe en una entrevista junto a otros entusiastas del tema de **WEB 3** y en un directo me preguntaron al aspecto y acá te comparto un breve resumen de lo leído previamente.
 
