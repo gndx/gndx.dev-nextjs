@@ -25,7 +25,7 @@ Puedo decir que me toco vivir parte de la **WEB 1.0,** mis inicios en internet s
 
 ## WEB 2.0
 
-Puedo decir que viví toda la experiencia de ser parte de los inicios, puesto que arranque en el 2001 con mis primeras páginas web y no fue hasta el 2003 que empece a publicar mis primeros sitios web, mis blogs, compartir conocimiento, crear y compartir. Me toco ver el nacimiento y la muerte de tecnologías, propuestas que se mantienen al día de hoy y la evolución del mismo tecnologías, Ya no es lo mismo hacer una página web hoy en día que hace 20 años. Lo que queremos rescatar de la **WEB 2.0** es forma en que podemos compartir fácilmente informacion y es por esto que dio al nacimiento de las redes sociales las cuales nos permitían compartir, crear y estar comunicados.
+Puedo decir que viví la experiencia de ser parte de los inicios de la Web 2.0, mis inicios fueron en el 2001 con mis primeras páginas web y no fue hasta el 2003 que empece a publica los primeros sitios web, mis blogs, particularmente compartiendo mi conocimiento en GNU/Linux, formar parte de la tecnologia y compartir con mas personas que apostaron por igual a esta revolusion en internet. Me toco ver el nacimiento y la muerte de tecnologías, propuestas que se mantienen al día de hoy y la evolución de otras tecnologías que hoy utilizamos, Ya no es lo mismo hacer una página web hoy en día que hace 20 años. Lo que queremos rescatar de la **WEB 2.0** es forma en que podemos compartir fácilmente informacion y es por esto que dio al nacimiento de las redes sociales las cuales nos permitían compartir, crear y estar comunicados, por lo tanto definimos a la WEB 2.0 como "Lectura y Escritura".
 
 ## WEB 3
 
