@@ -39,19 +39,19 @@ export const Home = () => {
     localStorage.removeItem('previouslyConnected');
   };
 
-  // const getMaxSupply = useCallback(async () => {
-  //   if (gndxBadge) {
-  //     const totalSupply = await gndxBadge.methods.totalSupply().call();
-  //     setTotalSupply(totalSupply);
-  //   }
-  // });
+  const getMaxSupply = useCallback(async () => {
+    if (gndxBadge) {
+      const totalSupply = await gndxBadge.methods.totalSupply().call();
+      setTotalSupply(totalSupply);
+    }
+  });
 
-  // const getTotalSupply = useCallback(async () => {
-  //   if (gndxBadge) {
-  //     const maxSupply = await gndxBadge.methods.maxSupply().call();
-  //     setMaxSupply(maxSupply);
-  //   }
-  // });
+  const getTotalSupply = useCallback(async () => {
+    if (gndxBadge) {
+      const maxSupply = await gndxBadge.methods.maxSupply().call();
+      setMaxSupply(maxSupply);
+    }
+  });
 
   const mint = () => {
     if (gndxBadge) {
