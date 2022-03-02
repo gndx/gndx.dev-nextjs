@@ -22,10 +22,9 @@ export const Home = () => {
 
   const mintAmount = 1;
 
-  const { activate, deactivate, account, error, chainId } = useWeb3React();
+  const { active, activate, deactivate, account, error, chainId } = useWeb3React();
   const gndxBadge = useGndxBadge();
   const isPolygonNetwork = chainId === 137;
-  const actives = false;
 
   const isUnsupportedChain = error instanceof UnsupportedChainIdError;
 
@@ -39,27 +38,26 @@ export const Home = () => {
     localStorage.removeItem('previouslyConnected');
   };
 
-  const getMaxSupply = useCallback(async () => {
-    if (gndxBadge) {
-      const totalSupply = await gndxBadge.methods.totalSupply().call();
-      setTotalSupply(totalSupply);
-    }
-  });
+  // const getMaxSupply = useCallback(async () => {
+  //   if (gndxBadge) {
+  //     const totalSupply = await gndxBadge.methods.totalSupply().call();
+  //     setTotalSupply(totalSupply);
+  //   }
+  // });
 
-  const getTotalSupply = useCallback(async () => {
-    if (gndxBadge) {
-      const maxSupply = await gndxBadge.methods.maxSupply().call();
-      setMaxSupply(maxSupply);
-    }
-  });
+  // const getTotalSupply = useCallback(async () => {
+  //   if (gndxBadge) {
+  //     const maxSupply = await gndxBadge.methods.maxSupply().call();
+  //     setMaxSupply(maxSupply);
+  //   }
+  // });
 
   const mint = () => {
     if (gndxBadge) {
       gndxBadge.methods
-        .mint(mintAmount)
+        .mint(account)
         .send({
           gas: 3000000,
-          gasPrice: 30000000000,
           from: account,
         })
         .on('transactionHash', (txHash) => {
@@ -146,7 +144,7 @@ export const Home = () => {
 
   const handleFocus = () => {
     const value = tokenRef.current.value.toLowerCase();
-    if (value === '0x0xgndx') {
+    if (value === 'gnft') {
       setIsMinting(true);
       localStorage.setItem('tokenRef', true);
     }
@@ -180,7 +178,7 @@ export const Home = () => {
                 Recibe uno de los 300 NFTs (non-fungible token) disponibles en agradecimiento por
                 participar en mi mas reciente platica sobre Web3.
               </p>
-              {actives && (
+              {active && (
                 <span className="sm:inline text-xs font-semibold p-2 bg-green-200 text-teal-700 rounded-md mr-4">
                   {ellipseAddress(account)} -{' '}
                   <XCircleIcon
@@ -312,7 +310,7 @@ export const Home = () => {
                         </div>
                       </div>
                     )}
-                    {actives ? (
+                    {active ? (
                       <>
                         {isPolygonNetwork && (
                           <span className="flex text-sm block mb-1" role="img" aria-label="Box">
@@ -325,13 +323,15 @@ export const Home = () => {
                         <button
                           className="inline-block items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
                           onClick={connect}
-                          disabled
                         >
-                          {isUnsupportedChain ? 'Red no Soportada' : 'NFT Agotados, gracias por participar.'}
+                          {isUnsupportedChain ? 'Red no Soportada' : 'Conectar wallet'}
                         </button>
+                        {isUnsupportedChain ? (<span className="flex text-sm block mb-1 mt-2" role="img" aria-label="Box">
+                          📦 {'  '} Change Network: Polygon Mainnet{' '}
+                        </span>) : null}
                       </>
                     )}
-                    {actives && (
+                    {active && (
                       <div className="block">
                         {!isUnsupportedChain && (
                           <div className="flex">
@@ -352,17 +352,16 @@ export const Home = () => {
                                 </span>
                               </div>
                             )}
-                            <div>
+                            {/* <div>
                               <button
                                 className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-lg md:px-10"
-                                onClick={handleRequest}
                               >
-                                Solicitar NFT
+                                Red no soportada, Cambiar a Polygon Mainnet
                               </button>
                               <span className="flex pb-6 text-sm mt-1" role="img" aria-label="Time">
                                 ⌛ Solicitar [12hrs]: (Gratis).
                               </span>
-                            </div>
+                            </div> */}
                           </div>
                         )}
                       </div>
