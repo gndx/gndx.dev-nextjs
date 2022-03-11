@@ -1,6 +1,6 @@
 ---
 name: Oscar Barajas
-avatar: https://arepa.s3.amazonaws.com/oscar-barajas-tavares.png
+avatar: https://arepa.s3.amazonaws.com/oscar-barajas-gndx.png
 occupation: Foundation Layer at Platzi - Microsoft MVP - Lead at Developer Circles from Meta, I teach React & Svelte - #Web3 #BTC #ETH - #Twitch Partner - 🇲🇽 🇨🇴
 company: Platzi
 email: blog@gndx.dev

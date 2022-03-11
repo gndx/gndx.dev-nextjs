@@ -38,7 +38,7 @@ export default function Home({ posts }) {
           </div>
           <div className="flex items-center justify-center mx-2 w-48">
             <img
-              src="https://arepa.s3.amazonaws.com/oscar-barajas-tavares.png"
+              src="https://arepa.s3.amazonaws.com/oscar-barajas-gndx.png"
               alt="Oscar Barajas Tavares"
               className="w-42 rounded-full hidden xl:block"
             />
