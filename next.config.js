@@ -15,7 +15,7 @@ module.exports = withPWA({
     return [
       {
         source: '/platzi',
-        destination: 'https://unete.platzi.com/afiliados-expert/?utm_source=partnerships&utm_medium=organic&utm_campaign=referidos2021_oscar_barajas/',
+        destination: 'https://platzi.com/aniversario/?utm_source=partnerships&utm_medium=organic&utm_campaign=afiliados_vip_gndx',
         permanent: true,
       },
     ]
