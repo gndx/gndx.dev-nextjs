@@ -14,7 +14,7 @@ const Newsletter = () => {
         <div className="mb-3">
           <label
             htmlFor="member_email"
-            className="block mb-2 text-md font-medium text-gray-600 dark:text-gray-400"
+            className="block mb-2 text-md font-medium text-gray-600 "
           >
             ¡Suscríbete al newsletter!
           </label>
@@ -23,7 +23,7 @@ const Newsletter = () => {
             name="member[email]"
             id="member_email"
             placeholder="Tu correo electrónico"
-            className="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500"
+            className="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300"
           />
         </div>
         <div className="mb-2">

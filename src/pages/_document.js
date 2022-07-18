@@ -34,7 +34,7 @@ class MyDocument extends Document {
           <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6020915585588826"
             crossorigin="anonymous"></script>
         </Head>
-        <body className="antialiased text-black bg-white dark:bg-gray-900 dark:text-white">
+        <body className="antialiased text-black bg-white">
           <Main />
           <NextScript />
         </body>

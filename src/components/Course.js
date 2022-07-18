@@ -6,7 +6,7 @@ const Course = () => {
   const courses = random(coursesData);
   return (
     <>
-      <h4 className="text-xs tracking-wide text-gray-500 uppercase dark:text-gray-400 mb-2">
+      <h4 className="text-xs tracking-wide text-gray-500 uppercase mb-2">
         Curso Recomendado
       </h4>
       {courses?.map((course) => (

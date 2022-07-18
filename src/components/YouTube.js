@@ -6,7 +6,7 @@ const YouTube = () => {
   const videos = random(youtube.items);
   return (
     <>
-      <h4 className="text-xs tracking-wide text-gray-500 uppercase dark:text-gray-400 mb-2">
+      <h4 className="text-xs tracking-wide text-gray-500 uppercase  mb-2">
         Ultimo Video
       </h4>
       {videos?.map((video) => (
