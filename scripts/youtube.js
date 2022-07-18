@@ -1,5 +1,5 @@
-const fetch = require('node-fetch');
-const fs = require('fs');
+import fetch from 'node-fetch';
+import fs from 'fs';
 
 const youtubeApiUrl = 'https://www.googleapis.com/youtube/v3/search';
 const channelId = 'UCw05fUBPwmpu-ehXFMqfdMw';
