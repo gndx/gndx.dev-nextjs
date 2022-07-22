@@ -14,6 +14,11 @@ module.exports = {
     'next/core-web-vitals',
   ],
   rules: {
-    semi: ['warning', 'always'],
+    "semi": [1, "always"],
+    "jsx-a11y/anchor-is-valid": ["error", {
+      "components": ["Link"],
+      "specialLink": ["hrefLeft", "hrefRight"],
+      "aspects": ["invalidHref", "preferButton"]
+    }]
   },
 };
