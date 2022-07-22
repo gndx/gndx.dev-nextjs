@@ -3,7 +3,7 @@ title: '🚀 NUEVO Curso GRATIS de Programación'
 summary: 'Aprende a programar y aumenta tus ingresos con el curso gratis de programción en Platzi'
 date: '2022-07-22T18:30:25.894Z'
 tags: ['javascript', 'platzi', 'programacion']
-image: 'https://arepa.s3.amazonaws.com/curso-de-programacion-gratis-platzi.png
+image: 'https://arepa.s3.amazonaws.com/curso-de-programacion-gratis-platzi.png'
 draft: false
 ---
 
