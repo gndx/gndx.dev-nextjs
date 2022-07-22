@@ -23,6 +23,11 @@ module.exports = withPWA({
         destination: 'https://platzi.com/conoceme/gndx/programacion?utm_campaign=afiliados2022_teacher',
         permanent: true,
       },
+      {
+        source: '/platzi-programacion',
+        destination: 'https://platzi.com/conoceme/gndx/programacion?utm_campaign=afiliados2022_teacher',
+        permanent: true,
+      },
     ]
   },
 });
