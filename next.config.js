@@ -15,7 +15,12 @@ module.exports = withPWA({
     return [
       {
         source: '/platzi',
-        destination: 'https://platzi.com/l/gndxexpert/',
+        destination: 'https://platzi.com/conoceme/gndx/precios',
+        permanent: true,
+      },
+      {
+        source: '/programacion',
+        destination: 'https://platzi.com/conoceme/gndx/programacion',
         permanent: true,
       },
     ]
