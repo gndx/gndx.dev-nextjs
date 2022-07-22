@@ -15,12 +15,12 @@ module.exports = withPWA({
     return [
       {
         source: '/platzi',
-        destination: 'https://platzi.com/conoceme/gndx/precios',
+        destination: 'https://platzi.com/conoceme/gndx/precios?utm_campaign=afiliados2022_teacher',
         permanent: true,
       },
       {
         source: '/programacion',
-        destination: 'https://platzi.com/conoceme/gndx/programacion',
+        destination: 'https://platzi.com/conoceme/gndx/programacion?utm_campaign=afiliados2022_teacher',
         permanent: true,
       },
     ]
