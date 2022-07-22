@@ -8,6 +8,9 @@ module.exports = withPWA({
     mode: 'production',
     disable: process.env.NODE_ENV === 'development',
   },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   images: {
     domains: ['arepa.s3.amazonaws.com'],
   },
