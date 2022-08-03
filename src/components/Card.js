@@ -4,7 +4,6 @@ import Link from './Link';
 import { logEvent as logGAEvent } from './analytics/GoogleAnalytics';
 
 const Card = ({ title, description, imgSrc, href }) => {
-  const [data, setData] = useState(href);
   const logClickEvent = () => {
     logGAEvent('view_project');
   };
