@@ -33,7 +33,7 @@ export default function Home({ posts }) {
               Oscar Barajas Tavares
             </h1>
             <h2 className="text-lg prose text-gray-600 ">
-              Foundation Layer at Platzi - Microsoft MVP - Lead at Developer Circles from Meta, I teach React & Svelte - #Web3 #BTC #ETH - #Twitch Partner - 🇲🇽 🇨🇴
+              Learning Engineer at Platzi - Microsoft MVP - Lead at Developer Circles from Meta, I teach React & Svelte - #Web3 #BTC #ETH - #Twitch Partner - 🇲🇽 🇨🇴
             </h2>
           </div>
           <div className="flex items-center justify-center mx-2 w-48">
