@@ -12,6 +12,7 @@ module.exports = withPWA({
     ignoreDuringBuilds: true,
   },
   images: {
+    unoptimized: true,
     domains: ['arepa.s3.amazonaws.com'],
   },
   async redirects() {
