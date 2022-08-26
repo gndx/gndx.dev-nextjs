@@ -13,7 +13,7 @@ const Card = ({ title, description, imgSrc, href }) => {
       <div className="h-full overflow-hidden border-2 border-gray-200 rounded-md border-opacity-60">
         {href ? (
           <Link href={href} aria-label={`Link to ${title}`}>
-            <Image
+            <img
               onClick={logClickEvent}
               alt={title}
               src={imgSrc}
@@ -23,7 +23,7 @@ const Card = ({ title, description, imgSrc, href }) => {
             />
           </Link>
         ) : (
-          <Image
+          <img
             alt={title}
             src={imgSrc}
             className="object-cover object-center lg:h-48 md:h-36"

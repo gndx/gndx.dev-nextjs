@@ -2,7 +2,6 @@ import Link from "src/components/Link";
 import PageTitle from "src/components/PageTitle";
 import SectionContainer from "src/components/SectionContainer";
 import { BlogSEO } from "src/components/SEO";
-import Image from "src/components/Image";
 import Tag from "src/components/Tag";
 import siteMetadata from "@data/siteMetadata";
 import Newsletter from "src/components/Newsletter";
@@ -75,7 +74,7 @@ export default function PostLayout({
                       key={author.name}
                     >
                       {author.avatar && (
-                        <Image
+                        <img
                           src={author.avatar}
                           width="38px"
                           height="38px"

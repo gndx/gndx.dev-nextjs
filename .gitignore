@@ -39,3 +39,6 @@ yarn-error.log*
 .env.test.local
 .env.production.local
 .vscode
+
+# scripts
+/scripts/youtube.js

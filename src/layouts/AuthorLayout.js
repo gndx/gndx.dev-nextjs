@@ -1,4 +1,3 @@
-import Image from 'src/components/Image'
 import { PageSEO } from 'src/components/SEO'
 
 export default function AuthorLayout({ children, frontMatter }) {
@@ -15,7 +14,7 @@ export default function AuthorLayout({ children, frontMatter }) {
         </div>
         <div className="items-start space-y-2 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0">
           <div className="flex flex-col items-center pt-8 space-x-2">
-            <Image
+            <img
               src={avatar}
               alt="avatar"
               width="192px"
